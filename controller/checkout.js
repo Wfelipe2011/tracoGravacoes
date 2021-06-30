@@ -2,7 +2,9 @@ import { service } from "../service/index.js";
 import { view } from "../view/index.js"
 
 export const ChekoutComponent = (idParametro) => {
-    view.getChekoutHtml();
+    view.getSpinner();
+    setTimeout(()=> {
+        view.getChekoutHtml();
 
     service.getVeiculo().then((dados) => {
         dados.forEach(element => {
@@ -12,6 +14,7 @@ export const ChekoutComponent = (idParametro) => {
             }
         });
     })
+    },600)
 }
 let placa = ''
 const adicionaParametrosNaTela = (objeto) => {

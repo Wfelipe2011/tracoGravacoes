@@ -5,7 +5,7 @@ import { view } from "./view/index.js";
 
 view.getSpinner()
     setTimeout(() => {
-        screen.getIndex();
+        view.getIndex();
     }, 600)
 
 const link = document.getElementById('link')

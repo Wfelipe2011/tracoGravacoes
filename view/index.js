@@ -12,7 +12,9 @@ const getIndex = () => {
 const getSpinner = () => {
     const main = document.getElementById('root')
     const dadosHtml = `
-    <div id="spinner"></div>
+    <section class="container">
+        <div id="spinner"></div>
+    </section>
       `
     main.innerHTML = dadosHtml
 

@@ -3,7 +3,9 @@ import { view } from "../view/index.js"
 import { AtualizaComponent } from "./atualiza.js"
 
 export const ListaClienteComponent = () => {
-    view.getListaClientesHtml()
+    view.getSpinner();
+    setTimeout(()=> {
+        view.getListaClientesHtml()
 
     service.getVeiculo().then((dados) => {
         dados.forEach((element) => {
@@ -28,6 +30,7 @@ export const ListaClienteComponent = () => {
             console.log(button)
         }
     })
+    },600)
 
 }
 

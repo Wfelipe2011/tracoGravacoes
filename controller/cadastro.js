@@ -2,7 +2,9 @@ import { service } from "../service/index.js"
 import { view } from "../view/index.js"
 
 export const CadastroComponent = () => {
-    const label = []
+    view.getSpinner();
+    setTimeout(()=> {
+        const label = []
     service.getVeiculo().then((dados)=> {
         dados.forEach(element => {
             if(element.label != null){
@@ -31,4 +33,5 @@ export const CadastroComponent = () => {
             service.postVeiculo(cadastroCliente)
         }
     })
+    },600)
 }
