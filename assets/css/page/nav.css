@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--lilas);
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgb(0 0 0 / 40%) 0 9px 19px;
+
+    height: 5vh;
+
+    margin-bottom: 3rem;
+}
+
+.menu__link {
+    color: var(--white);
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.menu__link__img {
+    width: 50%;
+}

@@ -1,0 +1,6 @@
+@import url(./config/reset.css);
+@import url(./page/base.css);
+@import url(./config/color.css);
+@import url(./page/nav.css);
+@import url(./page/main.css);
+@import url(./page/footer.css);
