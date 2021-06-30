@@ -41,6 +41,12 @@ label {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .none {
+        display: none;
+    }
+}
+
 
 @keyframes spin {
     to {
@@ -56,9 +62,4 @@ label {
     width: 7vw;
     height: 7vw;
     animation: spin 1s linear infinite;
-}
-
-#piechart_3d {
-    width: 60vw;
-    height: 20vh;
 }

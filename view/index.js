@@ -49,14 +49,14 @@ const getListaClientesHtml = () => {
     const main = document.getElementById('root')
     const dadosHtml = `
         <section class="lista-cliente">
-            <h1>Lista de Clientes</h1>
+            <h1 class="lista-cliente__title">Lista de Clientes</h1>
             <table class="lista-cliente__table" id="tbody">
             <tr>
-                <th>Cliente</th>
+                <th class="none">Cliente</th>
                 <th>Modelo</th>
                 <th>Placa</th>
-                <th>Tipo</th>
-                <th>Observações</th>
+                <th class="none">Tipo</th>
+                <th class="none">Observações</th>
                 <th><a>Novo</a></th>
             </tr>
             </table>
@@ -122,16 +122,16 @@ const getChekoutHtml = () => {
     const main = document.getElementById('root')
     const dadosHtml = `
           <section class="checkout">
-            <h2>Dados do cliente</h2>
-            <table class="checkout__tabela">
-            <tr>
-                <th>Cliente</th>
-                <th>Modelo</th>
-                <th>Placa</th>
-            </tr>
-            <tr id="tbody"></tr>
+            <h2 class="checkout__title">Dados do cliente</h2>
+            <table class="checkout__table">
+                <tr>
+                    <th>Cliente</th>
+                    <th>Modelo</th>
+                    <th>Placa</th>
+                </tr>
+                <tr id="tbody"></tr>
             </table>
-            <div>
+            <div class="checkout__item">
             <label>Total de Horas</label>
             <input
                 id="totalHora"
@@ -141,8 +141,7 @@ const getChekoutHtml = () => {
                 disabled
             />
             </div>
-            <br />
-            <div>
+            <div class="checkout__item">
             <label>Valor a pagar</label>
             <input
                 id="valorPagar"
@@ -152,9 +151,8 @@ const getChekoutHtml = () => {
                 disabled
             />
             </div>
-            <br />
             <div class="checkout__button">
-            <button class="btn-link" id="finalizar">Finalizar</button>
+                <button class="button" id="finalizar">Finalizar</button>
             </div>
           </section>
       `
@@ -165,7 +163,7 @@ const getFaturamentoHtml = () => {
     const main = document.getElementById('root')
     const dadosHtml = `
           <section class="faturamento">
-            <h1>Lista de Faturamento</h1>
+            <h1 class="faturamento__title">Lista de Faturamento</h1>
             <table class="faturamento__table">
                 <thead>
                 <tr>
@@ -176,8 +174,8 @@ const getFaturamentoHtml = () => {
                 </thead>
                 <tbody id="tbody"></tbody>
             </table>
-            <div class="faturamento__grafico">
-                <div id="piechart_3d"></div>
+            <div>
+                <div class="faturamento__grafico" id="piechart_3d"></div>
             </div>
           </section>
       `

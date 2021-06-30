@@ -1,6 +1,7 @@
 .checkin {
     margin: auto;
     width: 80vw;
+    max-width: 400px;
     margin-bottom: 4rem;
 
     display: flex;
@@ -64,4 +65,20 @@
     display: flex;
     justify-content: center;
     margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .checkin {
+        width: 60vw;
+    }
+
+    .checkin__table {
+        margin: 2rem 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .checkin {
+        width: 40vw;
+    }
 }

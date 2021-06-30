@@ -42,9 +42,9 @@ const criarNovaLinha = (cliente, modelo, placa, tipo, observacoes, id) => {
         <td class="none">${tipo}</td>
         <td class="none">${observacoes}</td>
         <td>
-            <div class="lista-cliente__table__button">
-                <a id="${id}" class="btn-link editar" >Editar</a>
-                <a id="${id}" class="btn-link" type="button">Excluir</a>
+            <div>
+                <a id="${id}" class="lista-cliente__table__button">Editar</a>
+                <a id="${id}" class="lista-cliente__table__button">Excluir</a>
             </div>
         </td>
         `
