@@ -1,5 +1,5 @@
 
-const url = "http://localhost:8000/api"
+const url = "https://traco-3.herokuapp.com/api"
 // ------------- POST ----------------------
 const postVeiculo = (objetoCliente) => {
     console.log("objetoCliente: ", JSON.stringify(objetoCliente))
