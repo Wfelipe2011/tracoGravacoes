@@ -19,7 +19,6 @@ export const AtualizaComponent = (idParametro) => {
         service.getVeiculo().then((dados) => {
             dados.forEach(element => {
                 if (element.id == idParametro) {
-                    console.log(element)
                     adicionaParametroNoInput(element)
                 }
             });
@@ -41,12 +40,21 @@ export const AtualizaComponent = (idParametro) => {
                 return alert(`Essa placa: ${cadastroCliente.label} já existe no banco.`)
             } else {
                 service.putVeiculo(atualizaCliente, idParametro).then(() => {
-                    cancelar();
+                    formulario.reset();
                     ListaClienteComponent();
                 })
             }
         })
-    },600)
+
+        const cancelar = document.getElementById("cancelar");
+        cancelar.addEventListener('click', (event) => {
+            event.preventDefault();
+            formulario.reset();
+            ListaClienteComponent();
+        })
+    }, 600)
+
+
 }
 
 const adicionaParametroNoInput = (objeto) => {
@@ -59,7 +67,3 @@ const adicionaParametroNoInput = (objeto) => {
 
 }
 
-const cancelar = () => {
-    const formulario = document.getElementById("formulario")
-    formulario.reset()
-}

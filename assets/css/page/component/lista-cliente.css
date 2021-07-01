@@ -19,6 +19,7 @@
 
 .lista-cliente__table {
     margin-bottom: 2rem;
+    min-width: 300px;
 }
 
 .lista-cliente__table th{
@@ -31,14 +32,34 @@
 }
 
 .lista-cliente__table th a{
-    color: var(--lilas);
-    font-weight: 700;
+    color: white;
+    background-color: var(--lilas);
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer; 
 }
 
 .lista-cliente__table__button {
-    color: var(--azul-link);
-    font-weight: 700;
-    margin: 0 5px;  
+    color: white;
+    background-color: var(--lilas);
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;  
+}
+
+.lista-cliente__container__button {
+    margin: 5px;
+    min-width:  125px;
+    max-width: 125px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
 }
 
 @media (min-width: 768px) {

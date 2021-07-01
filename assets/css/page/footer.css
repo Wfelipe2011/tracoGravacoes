@@ -3,11 +3,18 @@ footer {
     padding: 10px 0;
 }
 
+.footer__container {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 800px;
+}
+
 .footer a, p {
     color: var(--white);
 }
 
 .footer img {
+    max-width: 100px;
     width: 20%;
 }
 
@@ -37,10 +44,7 @@ footer {
 
 @media (min-width: 1024px) {
     footer {
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        height: 40vh;
     }
     .footer {
         margin-bottom: 3vw;

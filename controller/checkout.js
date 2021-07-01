@@ -46,7 +46,7 @@ const adicionaParametrosNoInput = (element) => {
     const tempo = checkout - checkin
     const hora = calculaHora(tempo)
     const totalApagar = (hora.minutos + (hora.horas * 60)) * valorMinuto;
-    console.log(totalApagar)
+   
     const inputHora = document.getElementById('totalHora')
     const inputTotal = document.getElementById('valorPagar')
 

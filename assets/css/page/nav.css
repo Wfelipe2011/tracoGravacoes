@@ -9,7 +9,7 @@
 
     height: 8vh;
 
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .menu__link {
@@ -24,7 +24,8 @@
 }
 
 .menu__link__img {
-    width: 8vw;
+    max-width: 65px;
+    width: 15vw;
 }
 
 @media (max-width: 768px) {
@@ -36,21 +37,12 @@
     .menu__link__item {
         padding: 5px;
     }
-
-    .menu__link__img {
-        width: 10vw;
-    }
 }
 
 @media (min-width: 1000px) {
     .menu {
         height: 8vh;
         justify-content: space-between;
-    }
-
-
-    .menu__link__img {
-        width: 6vw;
     }
 }
 
