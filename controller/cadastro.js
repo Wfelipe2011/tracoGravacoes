@@ -32,7 +32,9 @@ export const CadastroComponent = () => {
                 return alert(`Essa placa: ${cadastroCliente.label} já existe no banco.`)
             } else {
                 formulario.reset()
-                service.postVeiculo(cadastroCliente)
+                service.postVeiculo(cadastroCliente).then(()=> {
+                    window.location.href = '../checkin.html'
+                })
             }
         })
 

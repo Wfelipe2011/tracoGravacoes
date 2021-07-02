@@ -56,9 +56,15 @@
 }
 
 .checkin__table__item {
-    color: var(--azul-link);
+    background-color: var(--lilas);
+    border-radius: 10px;
+    cursor: pointer;  
+    color: white;
+    
+    font-size: 12px;
+    font-weight: bold;
 
-    font-weight: 700;
+    padding: 3px 10px;
 }
 
 .checkin__button {
